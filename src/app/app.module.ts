@@ -20,6 +20,7 @@ import { NavigationComponent } from './navbar/navbar.component';
 import { EventAddComponent } from './event-add/event-add.component';
 import { UserAddComponent } from './user-add/user-add.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
+import { ValorationComponent } from './valorations/valoration.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
     NavigationComponent,
     EventAddComponent,
     UserAddComponent,
-    CabeceraComponent
+    CabeceraComponent,
+    ValorationComponent
 ],
   imports: [
     BrowserModule,

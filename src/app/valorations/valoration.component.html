@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Valorations</h1>
+  </body>
+  </html>
+
+<div>
+  <label for="new-event">Event name: </label>
+  <input id="new-event" #eventName />
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button [routerLink]="['/eventValoration']"> Add Valoration </button>
+
+</div>
+
+<ul class="events">
+  <li *ngFor="let valoration of valorations">
+    <a routerLink="/detailEvent/{{valoration._id}}">
+      <span class="badge">{{valoration.eventName}}</span> 
+    </a>
+    <button type="button" class="delete" title="delete valoration"
+      (click)="delete(valoration)">x</button>
+  </li>
+</ul>
